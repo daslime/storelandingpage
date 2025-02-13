@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surge Brian - Modern Fashion</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Background Shapes -->
+<div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+</div>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress"></div>
+
+<!-- Wave Shape Divider -->
+<div class="shape-divider">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+  
+  
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- Logo Section -->
+            <a class="navbar-brand" href="#">
+                <span class="brand-text">Surge</span>Brian
+                <span class="brand-dot"></span>
+            </a>
+    
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="menu-icon">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </span>
+            </button>
+    
+            <!-- Navigation Items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">
+                            <span class="nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collection">
+                            <span class="nav-text">Collection</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trending">
+                            <span class="nav-text">Trending</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart-icon" href="#">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Parallax Background -->
+        <div class="hero-bg-parallax"></div>
+        
+        <!-- Decorative Elements -->
+        <div class="hero-decorative-elements">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="line-pattern"></div>
+        </div>
+    
+        <div class="container position-relative">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <span class="hero-subtitle">Premium Collection 2024</span>
+                        <h1 class="hero-title">Discover Your 
+                            <span class="style-text">Style</span>
+                            <span class="hero-accent">Identity</span>
+                        </h1>
+                        <p class="hero-description">Explore our curated collection of premium fashion pieces designed for the modern individual who dares to stand out.</p>
+                        <div class="hero-buttons">
+                            <a href="#collection" class="btn btn-primary btn-shine me-3">
+                                Shop Now
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                            <a href="#trending" class="btn btn-outline btn-hover-slide">
+                                Explore Collection
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image">
+                            <img src="images/appealing-african-american-man-in-black-unbuttoned-2024-11-07-15-11-21-utc.jpg" alt="Fashion Model" class="img-fluid">
+                        </div>
+                        <div class="image-accent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Collection Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <span class="text-muted text-uppercase letter-spacing-2">Premium Collection</span>
+                    <h2 class="display-5 mt-2 mb-4">Featured Products</h2>
+                    
+                    <!-- Filter Buttons -->
+                    <div class="btn-group" role="group" aria-label="Product filters">
+                        <button type="button" class="btn btn-outline-primary active">All</button>
+                        <button type="button" class="btn btn-outline-primary">New</button>
+                        <button type="button" class="btn btn-outline-primary">Trending</button>
+                        <button type="button" class="btn btn-outline-primary">Featured</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Products Row -->
+            <div class="row g-4">
+                <!-- Product Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="images/luxury-watch-isolated-on-white-background-2023-11-27-05-26-57-utc.jpg" class="card-img-top" alt="Luxury Watch">
+                            <!-- Product Badges -->
+                            <div class="position-absolute top-0 start-0 p-3">
+                                <span class="badge bg-success me-2">New</span>
+                                <span class="badge bg-danger">-20%</span>
+                            </div>
+                            <!-- Quick Actions -->
+                            <div class="position-absolute top-0 end-0 p-3">
+                                <button class="btn btn-light rounded-circle me-2" data-bs-toggle="tooltip" title="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="btn btn-light rounded-circle" data-bs-toggle="tooltip" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Chronograph Watch</h5>
+                            <div class="mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-1 text-muted">(4.8)</span>
+                            </div>
+                            <div class="mb-3">
+                                <span class="h5 me-2">Kes116,061</span>
+                                <small class="text-muted text-decoration-line-through">Kes128,970.90</small>
+                            </div>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="images/the-leather-female-handbag-2024-11-13-14-56-59-utc.jpg" class="card-img-top" alt="Designer Bag">
+                            <!-- Product Badge -->
+                            <div class="position-absolute top-0 start-0 p-3">
+                                <span class="badge bg-warning">Trending</span>
+                            </div>
+                            <!-- Quick Actions -->
+                            <div class="position-absolute top-0 end-0 p-3">
+                                <button class="btn btn-light rounded-circle me-2" data-bs-toggle="tooltip" title="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="btn btn-light rounded-circle" data-bs-toggle="tooltip" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Designer Leather Bag</h5>
+                            <div class="mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <span class="ms-1 text-muted">(4.2)</span>
+                            </div>
+                            <div class="mb-3">
+                                <span class="h5">Kes77,330.90</span>
+                            </div>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="images/aviator-sun-glasses-on-a-white-background-2024-12-03-18-24-18-utc.jpg" class="card-img-top" alt="Premium Sunglasses">
+                            <!-- Product Badge -->
+                            <div class="position-absolute top-0 start-0 p-3">
+                                <span class="badge bg-purple">Featured</span>
+                            </div>
+                            <!-- Quick Actions -->
+                            <div class="position-absolute top-0 end-0 p-3">
+                                <button class="btn btn-light rounded-circle me-2" data-bs-toggle="tooltip" title="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="btn btn-light rounded-circle" data-bs-toggle="tooltip" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Premium Sunglasses</h5>
+                            <div class="mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-1 text-muted">(4.9)</span>
+                            </div>
+                            <div class="mb-3">
+                                <span class="h5 me-2">Kes38,600.90</span>
+                                <small class="text-muted text-decoration-line-through">Kes 45,055.90</small>
+                            </div>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- View More Button -->
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-primary px-4 py-2">
+                    View All Products <i class="fas fa-arrow-right ms-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="feature-card">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Fast Delivery</h3>
+                        <p>Free shipping worldwide on all orders above $200</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Secure Payment</h3>
+                        <p>100% secure payment with multiple payment options</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <i class="fas fa-undo"></i>
+                        <h3>Easy Returns</h3>
+                        <p>30-day return policy for all products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center" data-aos="fade-up">
+                    <h2>Join Our Newsletter</h2>
+                    <p class="mb-4">Subscribe to get special offers and updates</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3>Surge Brian</h3>
+                    <p>Premium fashion for the modern individual.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 2nd Fashion Plaza, Ke</li>
+                        <li><i class="fas fa-phone"></i> +254768999816</li>
+                        <li><i class="fas fa-envelope"></i> info@surgebrian.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
